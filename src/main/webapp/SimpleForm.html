@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form method="post" action="xmlServlet">
+	User first name:<input name="firstName" value="Albert"/><br><br>
+	Last name:<input name="lastName" value="Skorohod"/><br><br>
+	
+	Profession:
+	<input type="radio" name="prof" value="Developer">Developer</input>
+	<input type="radio" name="prof" value="Architect">Architect</input><br><br>
+	
+	<select name="location">
+		<option value="here">Here</option>
+		<option value="there">There</option>
+		<option value="nowhere">Nowhere</option>
+	</select><br><br>
+	
+	Favorite transport
+	<select name="transport" multiple size=3>
+		<option value="subway">Subway</option>
+		<option value="tram">Tram</option>
+		<option value="bus">Bus</option>
+		<option value="car">Car</option>
+		<option value="bicycle">Bicycle</option>
+		<option value="taxi">Taxi</option>
+		<option value="plane">Plane</option>
+	</select><br><br>
+	
+		<input type="submit"/>
+</form>
+
+</body>
+</html>
