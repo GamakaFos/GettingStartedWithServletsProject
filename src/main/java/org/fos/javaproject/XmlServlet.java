@@ -38,7 +38,6 @@ public class XmlServlet extends HttpServlet {
 		// Same goes to select element
 		String location = request.getParameter("location");
 		out.println("You came " + location);
-		
 		// But for multiple elements we have to recieve an array
 		if(request.getParameterMap().containsKey("transport")) {
 			ArrayList<String> transportArr = new ArrayList<>(Arrays.asList(request.getParameterValues("transport")));	
